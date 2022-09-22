@@ -1,18 +1,22 @@
 console.log("привет!");
-let a=1;
+// let a=1;
+// let b=1;
 
-let b=1;
-// document.getElementById('out').innerHTML='233';
-// document.querySelector("div").innerHTML="444";
+document.getElementById('out').innerHTML='5555555';
 
-// let a=document.querySelector("unit unit2.out1").textContent;
-// console.log(a);
+//  let a=document.querySelector('#out1');
+//  console.log(a.innerHTML);
+ console.log(document.querySelector('#out1'));
 
-//  let b=document.querySelector(".input1");
-// let button1 =document.querySelector('.button1');
+
+
+
+ let b=document.querySelector(".input1");
+ let button1 =document.querySelector('.button1');
+
 
 
 button1.onclick=function(){
+    console.log(b);
    
-    console.log(+b.value+1);
 }
