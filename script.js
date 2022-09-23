@@ -32,6 +32,8 @@ button4.onclick = ()=> {
    document.querySelector(".unit4").style.backgroundColor=
    document.querySelector(".inputU4").value;
     }
+document.querySelector(".inputU41").oninput=()=>{
+   document.querySelector(".u41").value=
+   document.querySelector(".inputU41");
+}
 
-
-    
