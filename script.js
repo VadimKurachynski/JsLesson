@@ -42,7 +42,7 @@ document.querySelector(".inputU42").oninput=()=>{
    "true";
    }else{
       document.querySelector(".u42").innerHTML=
-   "true";
+   "false";
    }
    
 
