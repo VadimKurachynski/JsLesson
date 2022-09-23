@@ -36,4 +36,14 @@ document.querySelector(".inputU41").oninput=()=>{
    document.querySelector(".u41").innerHTML=
    document.querySelector(".inputU41").value;
 }
+document.querySelector(".inputU42").oninput=()=>{
+   if(document.querySelector(".inputU42").checked){
+      document.querySelector(".u42").innerHTML=
+   "true";
+   }else{
+      document.querySelector(".u42").innerHTML=
+   "true";
+   }
+   
 
+}
