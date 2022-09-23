@@ -33,7 +33,7 @@ button4.onclick = ()=> {
    document.querySelector(".inputU4").value;
     }
 document.querySelector(".inputU41").oninput=()=>{
-   document.querySelector(".u41").value=
-   document.querySelector(".inputU41");
+   document.querySelector(".u41").innerHTML=
+   document.querySelector(".inputU41").value;
 }
 
