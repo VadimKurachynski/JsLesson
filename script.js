@@ -27,14 +27,14 @@
 // --------------UNIT4------------------------------
 let button4 = document.querySelector(".buttonU4");
 document.querySelector(".inputU4");
-button4.onclick = ()=> {
+button4.onclick = () => {
    console.log(document.querySelector(".inputU4").value);
-   document.querySelector(".unit4").style.backgroundColor=
-   document.querySelector(".inputU4").value;
-    }
-document.querySelector(".inputU41").oninput=()=>{
-   document.querySelector(".u41").innerHTML=
-   document.querySelector(".inputU41").value;
+   document.querySelector(".unit4").style.backgroundColor =
+      document.querySelector(".inputU4").value;
+}
+document.querySelector(".inputU41").oninput = () => {
+   document.querySelector(".u41").innerHTML =
+      document.querySelector(".inputU41").value;
 }
 // document.querySelector(".inputU42").oninput=()=>{
 //    if(document.querySelector(".inputU42").checked){
@@ -44,12 +44,19 @@ document.querySelector(".inputU41").oninput=()=>{
 //       document.querySelector(".u42").innerHTML=
 //    "false";
 //    }
- 
-
 // }
-
-document.querySelector(".inputU42").oninput=()=>{
+document.querySelector(".inputU42").oninput = () => {
    console.log(document.querySelector(".inputU42").checked);
 }
 
- 
+document.querySelector(".btU43").onclick = () => {
+   console.log("cvcx");
+   let text1 = document.querySelector(".textU4");
+   let text2 = document.querySelector(".textU43");
+   text2.value = text1.value;
+
+
+}
+
+
+
