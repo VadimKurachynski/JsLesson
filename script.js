@@ -88,7 +88,16 @@ tt.style.background="red";
 tt.style.color="blue";
 console.log(tt.style);
 
-// document.querySelector(".btU9").onclick=function(){
+
+// document.querySelectorAll(".btU9").onclick=function(){
 //    this.classList.toggle("one");
 // }
 
+let gas=document.querySelectorAll(".btU9");
+for(let i=0; i<gas.length;i++)
+{
+   gas[i].onclick=function(){
+      console.log(this.getAttribute('data'));
+}
+  
+      }
