@@ -25,17 +25,17 @@
 // }
 
 // --------------UNIT4------------------------------
-let button4 = document.querySelector(".buttonU4");
-document.querySelector(".inputU4");
-button4.onclick = () => {
-   console.log(document.querySelector(".inputU4").value);
-   document.querySelector(".unit4").style.backgroundColor =
-      document.querySelector(".inputU4").value;
-}
-document.querySelector(".inputU41").oninput = () => {
-   document.querySelector(".u41").innerHTML =
-      document.querySelector(".inputU41").value;
-}
+// let button4 = document.querySelector(".buttonU4");
+// document.querySelector(".inputU4");
+// button4.onclick = () => {
+//    console.log(document.querySelector(".inputU4").value);
+//    document.querySelector(".unit4").style.backgroundColor =
+//       document.querySelector(".inputU4").value;
+// }
+// document.querySelector(".inputU41").oninput = () => {
+//    document.querySelector(".u41").innerHTML =
+//       document.querySelector(".inputU41").value;
+// }
 // document.querySelector(".inputU42").oninput=()=>{
 //    if(document.querySelector(".inputU42").checked){
 //       document.querySelector(".u42").innerHTML=
@@ -45,18 +45,31 @@ document.querySelector(".inputU41").oninput = () => {
 //    "false";
 //    }
 // }
-document.querySelector(".inputU42").oninput = () => {
-   console.log(document.querySelector(".inputU42").checked);
+// document.querySelector(".inputU42").oninput = () => {
+//    console.log(document.querySelector(".inputU42").checked);
+// }
+
+// document.querySelector(".btU43").onclick = () => {
+//    console.log("cvcx");
+//    let text1 = document.querySelector(".textU4");
+//    let text2 = document.querySelector(".textU43");
+//    text2.value = text1.value;
+// }
+
+// let formU4=document.querySelector(".formU4");
+
+
+// document.querySelector(".form-btn").onclick = () => {
+//    console.log("cvcx");
+//    console.log(formU4[0].value);
+// }
+
+
+let div = document.querySelectorAll(".unit5 div");
+console.log(div);
+console.log(div.length);
+for (let i = 0; i < div.length; i++) {
+   div[i].style.backgroundColor = "red";
+   div[i].style.border="1px solid black";
 }
-
-document.querySelector(".btU43").onclick = () => {
-   console.log("cvcx");
-   let text1 = document.querySelector(".textU4");
-   let text2 = document.querySelector(".textU43");
-   text2.value = text1.value;
-}
-
-
-
-
 
