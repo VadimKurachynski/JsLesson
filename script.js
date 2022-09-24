@@ -83,4 +83,12 @@
 // }
 
 // --------------UNIT9------------------------------
+let tt=document.querySelector('.textp');
+tt.style.background="red";
+tt.style.color="blue";
+console.log(tt.style);
+
+// document.querySelector(".btU9").onclick=function(){
+//    this.classList.toggle("one");
+// }
 
