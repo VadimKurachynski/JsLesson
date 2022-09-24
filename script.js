@@ -83,20 +83,27 @@
 // }
 
 // --------------UNIT9------------------------------
-let tt=document.querySelector('.textp');
-tt.style.background="red";
-tt.style.color="blue";
-console.log(tt.style);
+// let tt=document.querySelector('.textp');
+// tt.style.background="red";
+// tt.style.color="blue";
+// console.log(tt.style);
 
 
 // document.querySelectorAll(".btU9").onclick=function(){
 //    this.classList.toggle("one");
 // }
 
-let gas=document.querySelectorAll(".btU9");
-for(let i=0; i<gas.length;i++)
-{
-   gas[i].onclick=function(){
-      console.log(this.getAttribute('data'));
+// let gas=document.querySelectorAll(".btU9");
+// for(let i=0; i<gas.length;i++)
+// {
+//    gas[i].onclick=function(){
+//       console.log(this.getAttribute('data'));
+// }
+//       }
+
+for(let i=0; i<24; i++){
+      let a=document.createElement("div");
+      a.innerHTML=`Элемент ${i+1} `;
+      a.classList.add("col1");
+      document.querySelector(".graf").appendChild(a);
 }
-      }
