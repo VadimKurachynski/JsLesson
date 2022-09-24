@@ -54,9 +54,9 @@ document.querySelector(".btU43").onclick = () => {
    let text1 = document.querySelector(".textU4");
    let text2 = document.querySelector(".textU43");
    text2.value = text1.value;
-
-
 }
+
+
 
 
 
