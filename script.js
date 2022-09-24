@@ -99,5 +99,4 @@ for(let i=0; i<gas.length;i++)
    gas[i].onclick=function(){
       console.log(this.getAttribute('data'));
 }
-  
       }
