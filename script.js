@@ -65,11 +65,20 @@
 // }
 
 
-let div = document.querySelectorAll(".unit5 div");
-console.log(div);
-console.log(div.length);
-for (let i = 0; i < div.length; i++) {
-   div[i].style.backgroundColor = "red";
-   div[i].style.border="1px solid black";
+// let div = document.querySelectorAll(".unit5 div");
+// console.log(div);
+// console.log(div.length);
+// for (let i = 0; i < div.length; i++) {
+//    div[i].style.backgroundColor = "red";
+//    div[i].style.border="1px solid black";
+// }
+
+let rd=document.querySelectorAll(`input[name="r"]`);
+let bt=document.querySelector(".btU5").onclick=()=>{
+   for(let i=0; i<rd.length; i++){
+      if(rd[i].checked==true){
+         console.log(`попало  ${rd[i].value} `)
+      }
+   }
 }
 
