@@ -72,13 +72,14 @@
 //    div[i].style.backgroundColor = "red";
 //    div[i].style.border="1px solid black";
 // }
+// --------------UNIT5------------------------------
+// let rd = document.querySelectorAll(`input[name="r"]`);
+// let bt = document.querySelector(".btU5").onclick = () => {
+//    for (let i = 0; i < rd.length; i++) {
+//       if (rd[i].checked == true) {
+//          console.log(`попало  ${rd[i].value} `)
+//       }
+//    }
+// }
 
-let rd=document.querySelectorAll(`input[name="r"]`);
-let bt=document.querySelector(".btU5").onclick=()=>{
-   for(let i=0; i<rd.length; i++){
-      if(rd[i].checked==true){
-         console.log(`попало  ${rd[i].value} `)
-      }
-   }
-}
-
+// --------------UNIT6------------------------------
