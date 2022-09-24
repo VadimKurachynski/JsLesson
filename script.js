@@ -101,9 +101,23 @@
 // }
 //       }
 
-for(let i=0; i<24; i++){
-      let a=document.createElement("div");
+
+
+let bt=document.querySelector(".bt99").onclick=function(){
+let sd=0;
+let inp=document.querySelector(".in99");      
+sd=inp.value;
+document.querySelector(".graf").innerHTML="";
+for(let i=0; i<sd; i++){
+      let a=document.createElement("button");
       a.innerHTML=`Элемент ${i+1} `;
       a.classList.add("col1");
+      a.onclick=function(){
+            console.log(this.innerHTML);
+            this.remove();
+      }
       document.querySelector(".graf").appendChild(a);
+}
+
+
 }
