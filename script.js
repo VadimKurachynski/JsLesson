@@ -103,21 +103,23 @@
 
 
 
-let bt=document.querySelector(".bt99").onclick=function(){
-let sd=0;
-let inp=document.querySelector(".in99");      
-sd=inp.value;
-document.querySelector(".graf").innerHTML="";
-for(let i=0; i<sd; i++){
-      let a=document.createElement("button");
-      a.innerHTML=`Элемент ${i+1} `;
-      a.classList.add("col1");
-      a.onclick=function(){
-            console.log(this.innerHTML);
-            this.remove();
-      }
-      document.querySelector(".graf").appendChild(a);
-}
+// let bt = document.querySelector(".bt99").onclick = function () {
+//       let sd = 0;
+//       let inp = document.querySelector(".in99");
+//       sd = inp.value;
+//       document.querySelector(".graf").innerHTML = "";
+//       for (let i = 0; i < sd; i++) {
+//             let a = document.createElement("button");
+//             a.innerHTML = `<div class="tr${i + 1}">Элемент ${i + 1} </div>`;
+//             a.classList.add("col1");
+//             a.onclick = function () {
+//                   this.style.background = "red";
+//                   // this.remove();
+//             }
+//             document.querySelector(".graf").appendChild(a);
+//             document.querySelector(`.tr${i + 1}`).style.background = "red";
+
+//       }
 
 
-}
+// }
