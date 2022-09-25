@@ -122,25 +122,27 @@
 // let d = [1, 0, 0, 0, 0, 0, 0];
 // let k = 0;
 
-let k=6;
-document.querySelector(".outU12").innerHTML = k;
-
-
-
-document.querySelector(".push1").onclick = () =>{
-  k=k+1;
-document.querySelector(".outU12").innerHTML = k;
-}
-
-
-document.querySelector(".push2").onclick = () =>{
-k=k-1;
-document.querySelector(".outU12").innerHTML = k;
-}
-
-
-document.querySelector(".push3").onclick = () =>{
-     k= +document.querySelector(".in12").value;
+// let k=6;
+// document.querySelector(".outU12").innerHTML = k;
+// document.querySelector(".push1").onclick = () =>{
+//   k=k+1;
+// document.querySelector(".outU12").innerHTML = k;
+// }
+// document.querySelector(".push2").onclick = () =>{
+// k=k-1;
+// document.querySelector(".outU12").innerHTML = k;
+// }
+// document.querySelector(".push3").onclick = () =>{
+//      k= +document.querySelector(".in12").value;
     
-    }
-k=8;
+//     }
+// k=8;
+
+let a={
+"a":5,
+"b":"hello",
+"z2": 89,
+"s14 2":"privet",
+};
+console.log(a);
+console.log(a["s14 2"]);
