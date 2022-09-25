@@ -121,7 +121,16 @@
 // --------------UNIT12------------------------------
 let d = [1, 0, 0, 0, 0, 0, 0];
 let k = 0;
+console.log(k);
 document.querySelector(".push").onclick = () =>{
+      console.log(d);
+      console.log(k);
+      // console.log(d.length);
+      // console.log(k);
+ 
+d[k]=0;
+d[k+1]=1;
+k++;
+ 
 document.querySelector(".outU12").innerHTML = d;
-
 }
