@@ -119,18 +119,28 @@
 // }
 
 // --------------UNIT12------------------------------
-let d = [1, 0, 0, 0, 0, 0, 0];
-let k = 0;
-console.log(k);
-document.querySelector(".push").onclick = () =>{
-      console.log(d);
-      console.log(k);
-      // console.log(d.length);
-      // console.log(k);
- 
-d[k]=0;
-d[k+1]=1;
-k++;
- 
-document.querySelector(".outU12").innerHTML = d;
+// let d = [1, 0, 0, 0, 0, 0, 0];
+// let k = 0;
+
+let k=6;
+document.querySelector(".outU12").innerHTML = k;
+
+
+
+document.querySelector(".push1").onclick = () =>{
+  k=k+1;
+document.querySelector(".outU12").innerHTML = k;
 }
+
+
+document.querySelector(".push2").onclick = () =>{
+k=k-1;
+document.querySelector(".outU12").innerHTML = k;
+}
+
+
+document.querySelector(".push3").onclick = () =>{
+     k= +document.querySelector(".in12").value;
+    
+    }
+k=8;
