@@ -144,5 +144,11 @@ let a={
 "z2": 89,
 "s14 2":"privet",
 };
+
+
 console.log(a);
 console.log(a["s14 2"]);
+
+a.fg="rtt";
+
+document.querySelector(".outU12").innerHTML=a["s14 2"];
