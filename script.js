@@ -88,7 +88,6 @@
 // tt.style.color="blue";
 // console.log(tt.style);
 
-
 // document.querySelectorAll(".btU9").onclick=function(){
 //    this.classList.toggle("one");
 // }
@@ -100,8 +99,6 @@
 //       console.log(this.getAttribute('data'));
 // }
 //       }
-
-
 
 // let bt = document.querySelector(".bt99").onclick = function () {
 //       let sd = 0;
@@ -118,8 +115,13 @@
 //             }
 //             document.querySelector(".graf").appendChild(a);
 //             document.querySelector(`.tr${i + 1}`).style.background = "red";
-
 //       }
-
-
 // }
+
+// --------------UNIT12------------------------------
+let d = [1, 0, 0, 0, 0, 0, 0];
+let k = 0;
+document.querySelector(".push").onclick = () =>{
+document.querySelector(".outU12").innerHTML = d;
+
+}
