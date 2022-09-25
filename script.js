@@ -150,5 +150,9 @@ console.log(a);
 console.log(a["s14 2"]);
 
 a.fg="rtt";
-
+let out="";
 document.querySelector(".outU12").innerHTML=a["s14 2"];
+for (let key in a){
+    out+=`${key}  ${a[key]}` +"<br>"; 
+}
+ document.querySelector(".outU12").innerHTML=out;
