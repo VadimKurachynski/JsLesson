@@ -157,12 +157,10 @@
 // }
 // document.querySelector(".outU12").innerHTML = out;
 
-document.querySelector(".push1").onclick = () =>{
-      fetch('http://example.com/movies.json')
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-  });
-      }
+let a=new Set();
+a.add(1);
+a.add(2);
+a.add(3);
+a.add("hello");
+a.add(1);
+console.log(a);
