@@ -134,25 +134,35 @@
 // }
 // document.querySelector(".push3").onclick = () =>{
 //      k= +document.querySelector(".in12").value;
-    
+
 //     }
 // k=8;
 
-let a={
-"a":5,
-"b":"hello",
-"z2": 89,
-"s14 2":"privet",
-};
+// let a = {
+//       "a": 5,
+//       "b": "hello",
+//       "z2": 89,
+//       "s14 2": "privet",
+// };
 
 
-console.log(a);
-console.log(a["s14 2"]);
+// console.log(a);
+// console.log(a["s14 2"]);
 
-a.fg="rtt";
-let out="";
-document.querySelector(".outU12").innerHTML=a["s14 2"];
-for (let key in a){
-    out+=`${key}  ${a[key]}` +"<br>"; 
-}
- document.querySelector(".outU12").innerHTML=out;
+// a.fg = "rtt";
+// let out = "";
+// document.querySelector(".outU12").innerHTML = a["s14 2"];
+// for (let key in a) {
+//       out += `${key} ___ ${a[key]}` + "<br>";
+// }
+// document.querySelector(".outU12").innerHTML = out;
+
+document.querySelector(".push1").onclick = () =>{
+      fetch('http://example.com/movies.json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
+      }
