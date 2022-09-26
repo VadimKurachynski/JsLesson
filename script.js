@@ -163,4 +163,11 @@ a.add(2);
 a.add(3);
 a.add("hello");
 a.add(1);
-console.log(a);
+// console.log(a);
+for(let item of a){
+  // console.log(item);
+}
+
+let arr=[1,2,1,7,1,1,3,1,7,1,1];
+let b =new Set(arr);
+console.log(b);
