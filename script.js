@@ -175,3 +175,9 @@
 // mySet.has(document.querySelector("body")); // true
 // console.log(mySet);
 
+// --------------UNIT17------------------------------
+let a =[4,5,6,12,30,200,1,0,-2];
+let b=a.map(function(item,index){
+return item+2;
+});
+console.log(b);
