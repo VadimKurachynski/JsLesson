@@ -202,3 +202,7 @@ document.querySelector(".u19-3").onmousemove=()=>{
   document.querySelector(".u19-3").style.width=w+"px";
   w++;
 }
+document.querySelector(".u19-3").onmousemove=()=>{
+  document.querySelector(".u19-3").style.background="red";
+  
+}
