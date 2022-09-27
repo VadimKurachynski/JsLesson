@@ -197,6 +197,8 @@ document.querySelector(".u19-2").oncontextmenu=()=>{
   console.log("content");
 }
 
+let w=75;
 document.querySelector(".u19-3").onmousemove=()=>{
-  console.log("mouse");
+  document.querySelector(".u19-3").style.width=w+"px";
+  w++;
 }
