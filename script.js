@@ -191,4 +191,6 @@ document.querySelector(".u19-1").onclick=(even)=>{
 document.querySelector(".u19-2").onclick=()=>{
   console.log("привет");
 }
-
+document.querySelector(".u19-2").ondblclick=()=>{
+  console.log("привет двойной");
+}
