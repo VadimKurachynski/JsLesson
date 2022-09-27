@@ -187,10 +187,16 @@ document.querySelector(".u19-1").onclick=(even)=>{
   console.log(even);
   console.log("привет");
 }
-
 document.querySelector(".u19-2").onclick=()=>{
   console.log("привет");
 }
 document.querySelector(".u19-2").ondblclick=()=>{
   console.log("привет двойной");
+}
+document.querySelector(".u19-2").oncontextmenu=()=>{
+  console.log("content");
+}
+
+document.querySelector(".u19-3").onmousemove=()=>{
+  console.log("mouse");
 }
