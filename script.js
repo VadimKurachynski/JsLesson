@@ -208,3 +208,10 @@ document.querySelector(".u19-3").onmousemove=()=>{
 document.querySelector(".u19-3").onmouseleave=()=>{
   document.querySelector(".u19-3").style.background="black"; 
 }
+document.querySelector(".u19-3").onmousedown=()=>{
+  document.querySelector(".u19-3").style.background="orange"; 
+}
+document.querySelector(".u19-3").onmouseup=()=>{
+  document.querySelector(".u19-3").style.background="blue"; 
+}
+
