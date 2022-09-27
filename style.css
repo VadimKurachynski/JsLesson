@@ -40,3 +40,13 @@ h2 {
     font-size: 20px;
 
 }
+.u19box{
+    display: flex;
+justify-content: center;
+}
+.u19{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+}
