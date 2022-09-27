@@ -183,4 +183,7 @@
 // console.log(b);
 
 // --------------UNIT19------------------------------
+document.querySelector(".u19-1").onclick=()=>{
+  console.log("привет");
+}
 
