@@ -183,7 +183,12 @@
 // console.log(b);
 
 // --------------UNIT19------------------------------
-document.querySelector(".u19-1").onclick=()=>{
+document.querySelector(".u19-1").onclick=(even)=>{
+  console.log(even);
+  console.log("привет");
+}
+
+document.querySelector(".u19-2").onclick=()=>{
   console.log("привет");
 }
 
