@@ -183,44 +183,46 @@
 // console.log(b);
 
 // --------------UNIT19------------------------------
-document.querySelector(".u19-1").onclick = (even) => {
-  console.log(even);
-  console.log("привет");
-}
-document.querySelector(".u19-2").onclick = () => {
-  console.log("привет");
-}
-document.querySelector(".u19-2").ondblclick = () => {
-  console.log("привет двойной");
-}
-document.querySelector(".u19-2").oncontextmenu = () => {
-  console.log("content");
-}
+// document.querySelector(".u19-1").onclick = (even) => {
+//   console.log(even);
+//   console.log("привет");
+// }
+// document.querySelector(".u19-2").onclick = () => {
+//   console.log("привет");
+// }
+// document.querySelector(".u19-2").ondblclick = () => {
+//   console.log("привет двойной");
+// }
+// document.querySelector(".u19-2").oncontextmenu = () => {
+//   console.log("content");
+// }
 
-let w = 75;
-document.querySelector(".u19-3").onmousemove = () => {
-  document.querySelector(".u19-3").style.width = w + "px";
-  w++;
-}
-document.querySelector(".u19-3").onmousemove = () => {
-  document.querySelector(".u19-3").style.background = "red";
-}
-document.querySelector(".u19-3").onmouseleave = () => {
-  document.querySelector(".u19-3").style.background = "black";
-}
-document.querySelector(".u19-3").onmousedown = () => {
-  document.querySelector(".u19-3").style.background = "orange";
-}
-document.querySelector(".u19-3").onmouseup = () => {
-  document.querySelector(".u19-3").style.background = "blue";
-}
+// let w = 75;
+// document.querySelector(".u19-3").onmousemove = () => {
+//   document.querySelector(".u19-3").style.width = w + "px";
+//   w++;
+// }
+// document.querySelector(".u19-3").onmousemove = () => {
+//   document.querySelector(".u19-3").style.background = "red";
+// }
+// document.querySelector(".u19-3").onmouseleave = () => {
+//   document.querySelector(".u19-3").style.background = "black";
+// }
+// document.querySelector(".u19-3").onmousedown = () => {
+//   document.querySelector(".u19-3").style.background = "orange";
+// }
+// document.querySelector(".u19-3").onmouseup = () => {
+//   document.querySelector(".u19-3").style.background = "blue";
+// }
 
-// let x=document.querySelector(".progru19").value;
-// console.log(x);
-document.querySelector(".u19bt").onclick = () => {
+// // let x=document.querySelector(".progru19").value;
+// // console.log(x);
+// document.querySelector(".u19bt").onclick = () => {
   
-  document.querySelector(".progru19").value+=10;
-  if(document.querySelector(".progru19").value==100){
-    document.querySelector(".progru19").value=0;
-  }
-}
+//   document.querySelector(".progru19").value+=10;
+//   if(document.querySelector(".progru19").value==100){
+//     document.querySelector(".progru19").value=0;
+//   }
+// }
+
+// --------------UNIT20------------------------------
