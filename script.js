@@ -215,6 +215,12 @@ document.querySelector(".u19-3").onmouseup = () => {
   document.querySelector(".u19-3").style.background = "blue";
 }
 
-document.querySelector(".u19-2").onclick = () => {
-  console.log("привет");
+// let x=document.querySelector(".progru19").value;
+// console.log(x);
+document.querySelector(".u19bt").onclick = () => {
+  
+  document.querySelector(".progru19").value+=10;
+  if(document.querySelector(".progru19").value==100){
+    document.querySelector(".progru19").value=0;
+  }
 }
