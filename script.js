@@ -226,9 +226,9 @@
 // }
 
 // --------------UNIT20------------------------------
-document.querySelector(".inputU20").oninput= function(even){
-  // console.log(1);
-}
+// document.querySelector(".inputU20").oninput= function(even){
+//   console.log(1);
+// }
 
 // document.querySelector(".inputU20").onkeypress= function(even){
 //   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
@@ -237,3 +237,7 @@ document.querySelector(".inputU20").oninput= function(even){
 document.querySelector(".inputU20").onkeydown= function(even){
   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
 }
+
+// document.querySelector(".inputU20").onkeyup= function(even){
+//   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
+// }
