@@ -234,10 +234,43 @@
 //   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
 // }
 
-document.querySelector(".inputU20").onkeydown= function(even){
-  console.log(`${even.charCode}           ${even.code}  ${even.key}`);
-}
+// document.querySelector(".inputU20").onkeydown= function(even){
+//   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
+// }
 
 // document.querySelector(".inputU20").onkeyup= function(even){
 //   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
 // }
+
+// --------------UNIT21------------------------------
+// document.querySelector(".u19-3").addEventListener("touchstart",mytouch1);
+// document.querySelector(".u19-3").addEventListener("touchend",mytouch2);
+// document.querySelector(".u19-3").addEventListener("touchmove",mytouch3);
+
+
+// function mytouch1(){
+//   console.log("toch1");
+// }
+// function mytouch2(){
+//   console.log("toch2");
+// }
+// function mytouch3(){
+//   console.log("toch3");
+// }
+// --------------UNIT22------------------------------
+let a=5;
+a=a*2;
+console.log(a);
+try{
+  document.querySelector(".23").innerHTML=a;
+}
+catch(err){
+  console.log("ошибка");
+}
+frt();
+
+
+
+function frt(){
+  console.log(2);
+}
