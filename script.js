@@ -282,5 +282,5 @@ localStorage.setItem("mass", [1,2,3,4,5]);
 let b=localStorage.data;
 let d=localStorage.mass;
 console.log(d);
- let u=d.split(",");
+ let u=d.split(",").map(string => parseInt(string))
  console.log(u);
