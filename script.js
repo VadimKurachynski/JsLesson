@@ -293,5 +293,7 @@ document.querySelector(".u23bt").onclick = () => {
     const p = JSON.parse(t);
     console.log(t);
     t+=1;
+    sessionStorage.setItem('test', 1);
 }
+// localStorage.clear();
 
