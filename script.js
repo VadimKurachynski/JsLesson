@@ -275,12 +275,23 @@
 
 
 // --------------UNIT23------------------------------
-localStorage.setItem("data", 5);
-localStorage.setItem("mass", [1,2,3,4,5]);
-// let b=localStorage.data[3];
-// let b=localStorage.getItem("data");
-let b=localStorage.data;
-let d=localStorage.mass;
-console.log(d);
- let u=d.split(",").map(string => parseInt(string))
- console.log(u);
+// localStorage.setItem("data", 5);
+// localStorage.setItem("mass", [1,2,3,4,5]);
+// // let b=localStorage.data[3];
+// // let b=localStorage.getItem("data");
+// let b=localStorage.data;
+// let d=localStorage.mass;
+// console.log(d);
+//  let u=d.split(",").map(string => parseInt(string))
+//  console.log(u);
+
+
+let t=0;
+document.querySelector(".u23bt").onclick = () => {
+    
+    localStorage.setItem("data", t);
+    const p = JSON.parse(t);
+    console.log(t);
+    t+=1;
+}
+
