@@ -298,4 +298,13 @@
 // // localStorage.clear();
 
 // --------------UNIT25------------------------------
-let xht=new XMLHttpRequest();
+let xt=new XMLHttpRequest();
+xt.onreadystatechange=function(){
+   if (this.readyState==4 && this.status==200){
+    myFunction(this.responseText)
+   }
+}
+
+function myFunction(data){
+    console.log(data);
+}
