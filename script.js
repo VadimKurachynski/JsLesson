@@ -218,7 +218,7 @@
 // // let x=document.querySelector(".progru19").value;
 // // console.log(x);
 // document.querySelector(".u19bt").onclick = () => {
-  
+
 //   document.querySelector(".progru19").value+=10;
 //   if(document.querySelector(".progru19").value==100){
 //     document.querySelector(".progru19").value=0;
@@ -258,19 +258,29 @@
 //   console.log("toch3");
 // }
 // --------------UNIT22------------------------------
-let a=5;
-a=a*2;
-console.log(a);
-try{
-  document.querySelector(".23").innerHTML=a;
-}
-catch(err){
-  console.log("ошибка");
-}
-frt();
+// let a=5;
+// a=a*2;
+// console.log(a);
+// try{
+//   document.querySelector(".23").innerHTML=a;
+// }
+// catch(err){
+//   console.log("ошибка");
+//   console.log(err);
+// }
+// frt();
+// function frt(){
+//   console.log(2);
+// }
 
 
-
-function frt(){
-  console.log(2);
-}
+// --------------UNIT23------------------------------
+localStorage.setItem("data", 5);
+localStorage.setItem("mass", [1,2,3,4,5]);
+// let b=localStorage.data[3];
+// let b=localStorage.getItem("data");
+let b=localStorage.data;
+let d=localStorage.mass;
+console.log(d);
+ let u=d.split(",");
+ console.log(u);
