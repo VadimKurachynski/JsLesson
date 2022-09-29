@@ -286,14 +286,16 @@
 //  console.log(u);
 
 
-let t=0;
-document.querySelector(".u23bt").onclick = () => {
+// let t=0;
+// document.querySelector(".u23bt").onclick = () => {
     
-    localStorage.setItem("data", t);
-    const p = JSON.parse(t);
-    console.log(t);
-    t+=1;
-    sessionStorage.setItem('test', 1);
-}
-// localStorage.clear();
+//     localStorage.setItem("data", t);
+//     const p = JSON.parse(t);
+//     console.log(t);
+//     t+=1;
+//     sessionStorage.setItem('test', 1);
+// }
+// // localStorage.clear();
 
+// --------------UNIT25------------------------------
+let xht=new XMLHttpRequest();
