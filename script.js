@@ -288,7 +288,7 @@
 
 // let t=0;
 // document.querySelector(".u23bt").onclick = () => {
-    
+
 //     localStorage.setItem("data", t);
 //     const p = JSON.parse(t);
 //     console.log(t);
@@ -298,13 +298,34 @@
 // // localStorage.clear();
 
 // --------------UNIT25------------------------------
-let xt=new XMLHttpRequest();
-xt.onreadystatechange=function(){
+// https://itchief.ru/javascript/ajax-introduction
+
+
+let xtget=new XMLHttpRequest();
+xtget.onreadystatechange=function(){
    if (this.readyState==4 && this.status==200){
     myFunction(this.responseText)
    }
 }
-
+xtget.open("GET","http://getpost.itgid.info/index3.php?val=6&nom=8",true);
+xtget.send();
 function myFunction(data){
     console.log(data);
 }
+
+
+// let xtpost=new XMLHttpRequest();
+// xtpost.onreadystatechange=function(){
+//    if (this.readyState==4 && this.status==200){
+//     myFunction(this.responseText)
+//    }
+// }
+
+// xtpost.open("POST","http://getpost.itgid.info/index2.php",true);
+// xtpost.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+// xtpost.send("val=6&nom=8");
+// function myFunction(data){
+//     console.log(data);
+// }
+
+
