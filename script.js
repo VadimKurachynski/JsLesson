@@ -307,7 +307,7 @@ xtget.onreadystatechange=function(){
     myFunction(this.responseText)
    }
 }
-xtget.open("GET","http://getpost.itgid.info/index3.php?val=6&nom=8",true);
+xtget.open("GET","http://getpost.itgid.info/index3.php",true);
 xtget.send();
 function myFunction(data){
     console.log(data);
