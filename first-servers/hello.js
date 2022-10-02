@@ -1,12 +1,14 @@
 const http = require("http");
-const host = 'localhost';
-const port = 8000;
 
-let g = {a1:5,
-a2:6,
-a3:7,
+const host = 'localhost';
+const port = 3000;
+
+let g = {
+    a1: 5,
+    a2: 6,
+    a3: 7,
 };
-g=JSON.stringify(g);
+g = JSON.stringify(g);
 const requestListener = function (req, res) {
     res.setHeader("Content-Type", "text/csv");
     // res.setHeader("Content-Disposition", "attachment;filename=oceanpals.csv");
@@ -19,5 +21,5 @@ const requestListener = function (req, res) {
 const server = http.createServer(requestListener);
 server.listen(port, host, () => {
     console.log(`Server is running on http://${host}:${port}`);
-   
+
 });
