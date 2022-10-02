@@ -300,32 +300,31 @@
 // --------------UNIT25------------------------------
 // https://itchief.ru/javascript/ajax-introduction
 
-
-let xtget=new XMLHttpRequest();
-xtget.onreadystatechange=function(){
-   if (this.readyState==4 && this.status==200){
-    myFunction(this.responseText)
-   }
-}
-xtget.open("GET","http://getpost.itgid.info/index3.php",true);
-xtget.send();
-function myFunction(data){
-    console.log(data);
-}
-
-
-// let xtpost=new XMLHttpRequest();
-// xtpost.onreadystatechange=function(){
+// let xtget=new XMLHttpRequest();
+// xtget.onreadystatechange=function(){
 //    if (this.readyState==4 && this.status==200){
 //     myFunction(this.responseText)
 //    }
 // }
-
-// xtpost.open("POST","http://getpost.itgid.info/index2.php",true);
-// xtpost.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-// xtpost.send("val=6&nom=8");
+// xtget.open("GET","http://getpost.itgid.info/index2.php",true);
+// xtget.send();
 // function myFunction(data){
 //     console.log(data);
 // }
 
+document.querySelector(".u23bt1").onclick = () => {
+    let xtget = new XMLHttpRequest();
+    xtget.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            myFunction(this.responseText)
+        }
+    }
+    xtget.open("GET", "http://localhost:8000", true);
+    xtget.send();
+    function myFunction(data) {
+        const p = JSON.parse(data);
+        console.log(p.a1);
+        document.querySelector(".u19-2").innerHTML = p.a2;
+    }
 
+}
