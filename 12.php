@@ -1,6 +1,7 @@
 <?php
 
 
+
 $myObj->name = $_POST["fname"];;
 $myObj->age = 30;
 $myObj->city = "New York";
