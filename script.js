@@ -300,6 +300,8 @@
 // --------------UNIT25------------------------------
 // https://itchief.ru/javascript/ajax-introduction
 
+
+
 // let xtget=new XMLHttpRequest();
 // xtget.onreadystatechange=function(){
 //    if (this.readyState==4 && this.status==200){
@@ -318,8 +320,10 @@ document.querySelector(".u23bt1").onclick = () => {
         if (this.readyState == 4 && this.status == 200) {
             myFunction(this.responseText)
         }
+
+
     }
-    xtget.open("GET", "http://localhost:8000", true);
+    xtget.open("GET", "http://127.0.0.1:5500/s/12.php", true);
     xtget.send();
     function myFunction(data) {
         const p = JSON.parse(data);
@@ -328,5 +332,5 @@ document.querySelector(".u23bt1").onclick = () => {
     }
 
 
-    
+
 }
