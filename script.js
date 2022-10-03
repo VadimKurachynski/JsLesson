@@ -314,23 +314,17 @@
 //     console.log(data);
 // }
 
-document.querySelector(".u23bt1").onclick = () => {
+document.querySelector(".u23bt1").onclick = () => 8b{
     let xtget = new XMLHttpRequest();
     xtget.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             myFunction(this.responseText)
         }
-
-
     }
-
 
     xtget.open("POST", "http://node.operate.su/12.php", true);
     xtget.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xtget.send("fname=ПЕТЯ&lname=Ford");
-
-
-
 
     function myFunction(data) {
         let myObj = JSON.parse(data);
