@@ -323,12 +323,12 @@ document.querySelector(".u23bt1").onclick = () => {
 
 
     }
-    xtget.open("GET", "http://127.0.0.1:5500/s/12.php", true);
+    xtget.open("GET", "http://node.operate.su/12.php", true);
     xtget.send();
     function myFunction(data) {
-        const p = JSON.parse(data);
-        console.log(p.a1);
-        document.querySelector(".u19-2").innerHTML = p.a2;
+        let myObj = JSON.parse(data);
+        console.log(myObj);
+        document.querySelector(".u19-2").innerHTML = myObj.name;
     }
 
 
