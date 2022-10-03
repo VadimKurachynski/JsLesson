@@ -314,26 +314,44 @@
 //     console.log(data);
 // }
 
-document.querySelector(".u23bt1").onclick = () => {
-    let xtget = new XMLHttpRequest();
-    xtget.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            myFunction(this.responseText)
-        }
-    }
+// document.querySelector(".u23bt1").onclick = () => {
+//     let xtget = new XMLHttpRequest();
+//     xtget.onreadystatechange = function () {
+//         if (this.readyState == 4 && this.status == 200) {
+//             myFunction(this.responseText)
+//         }
+//     }
+//     xtget.open("POST", "http://node.operate.su/12.php", true);
+//     xtget.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+//     xtget.send("fname=ПЕТЯ&lname=Ford");
 
-    xtget.open("POST", "http://node.operate.su/12.php", true);
-    xtget.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xtget.send("fname=ПЕТЯ&lname=Ford");
+//     function myFunction(data) {
+//         let myObj = JSON.parse(data);
+//         console.log(myObj);
+//         document.querySelector(".u19-1").innerHTML = myObj.name;
+//         document.querySelector(".u19-2").innerHTML = myObj.age;
+//         document.querySelector(".u19-3").innerHTML = myObj.city;
+//     }
 
-    function myFunction(data) {
-        let myObj = JSON.parse(data);
-        console.log(myObj);
-        document.querySelector(".u19-1").innerHTML = myObj.name;
-        document.querySelector(".u19-2").innerHTML = myObj.age;
-        document.querySelector(".u19-3").innerHTML = myObj.city;
-    }
+// }
 
+// fetch("http://node.operate.su/12.php")
+//     .then(data => {
+//         console.log(data);
+//         return data.text();
+//     })
+//     .then(data=>{
+//         console.log(data);
+//     })
 
+let a = new Promise((resolve, reject) => {
+    fetch("http://node.operate.su/12.php")
+        .then(data => {
+            resolve(data.text());
+        })
 
-}
+});
+
+a.then(data => {
+    console.log(data);
+})
