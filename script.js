@@ -349,9 +349,25 @@ let a = new Promise((resolve, reject) => {
         .then(data => {
             resolve(data.text());
         })
-
 });
 
-a.then(data => {
-    console.log(data);
-})
+let b = new Promise((resolve, reject) => {
+    fetch("http://node.operate.su/12.php")
+        .then(data => {
+            resolve(data.text());
+        })
+});
+
+// a.then(data => {
+//     //console.log(data);
+// })
+
+// b.then(data => {
+//    // console.log(data);
+// })
+
+Promise.all([a, b]).then(value => {
+    console.log(value[0]);
+    console.log(value[1]);
+
+});
