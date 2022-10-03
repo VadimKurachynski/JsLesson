@@ -323,12 +323,19 @@ document.querySelector(".u23bt1").onclick = () => {
 
 
     }
-    xtget.open("GET", "http://node.operate.su/12.php", true);
-    xtget.send();
+    // xtget.open("GET", "http://node.operate.su/12.php", true);
+    // xtget.send();
+
+    xhttp.open("POST", "ajax_test.asp", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("fname=Henry&lname=Ford");
+
     function myFunction(data) {
         let myObj = JSON.parse(data);
         console.log(myObj);
-        document.querySelector(".u19-2").innerHTML = myObj.name;
+        document.querySelector(".u19-1").innerHTML = myObj.name;
+        document.querySelector(".u19-2").innerHTML = myObj.age;
+        document.querySelector(".u19-3").innerHTML = myObj.city;
     }
 
 
