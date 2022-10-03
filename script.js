@@ -325,10 +325,14 @@ document.querySelector(".u23bt1").onclick = () => {
     }
     // xtget.open("GET", "http://node.operate.su/12.php", true);
     // xtget.send();
+    let arr = [1, 2, 3, 4, 5];
+    arr = JSON.stringify(arr);
+    xtget.open("POST", "http://node.operate.su/12.php", true);
+    xtget.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+     //xtget.send("fname=Henry&lname=Ford");
+     xtget.send(sdf=arr);
+   // xtget.send(arr);
 
-    xhttp.open("POST", "ajax_test.asp", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("fname=Henry&lname=Ford");
 
     function myFunction(data) {
         let myObj = JSON.parse(data);
