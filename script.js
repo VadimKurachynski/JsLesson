@@ -323,13 +323,18 @@ document.querySelector(".u23bt1").onclick = () => {
 
 
     }
+    let fg = {
+        "fname": "Петя",
+        "name": "Ford"
+    };
 
-
-
+    // let name = "fname=ПЕТЯ";
+    // let fname = "lname=Ford";
 
     xtget.open("POST", "http://node.operate.su/12.php", true);
     xtget.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xtget.send("fname=Henry&lname=Ford");
+    // xtget.send(`${name}&${fname}`);
+    xtget.send(JSON.stringify(fg)  );
 
 
 
