@@ -314,7 +314,7 @@
 //     console.log(data);
 // }
 
-document.querySelector(".u23bt1").onclick = () => 8b{
+document.querySelector(".u23bt1").onclick = () => {
     let xtget = new XMLHttpRequest();
     xtget.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
