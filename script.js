@@ -404,19 +404,44 @@
 // //-----------------------отправка json на сервер-----------------
 
 let a = new Promise((resolve, reject) => {
-fetch('http://localhost/12.php', {
-    method: 'POST',
-    headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ a: 7, b: 89, str: 'stroka' })
-}).then(res => resolve(res.json()));
-});
+    fetch('http://localhost/12.php', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ a: 7, b: 89, str: 'stroka' })
+    }).then(res => resolve(res.json()));
 
+});
 a.then(res => {
-    console.log(res);
+    //  console.log(res);
 })
 
+let b = new Promise((resolve, reject) => {
+    fetch('http://localhost/12.php', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ a: 90, b: 92, str: 'stroka2' })
+    }).then(res => resolve(res.json()));
+});
 
+b.then(res => {
+    //  console.log(res);
+})
 
+Promise.all([a, b]).then(value => {
+
+    console.log(value[0]);
+    for (let key in value[0]) {
+        console.log(value[0][key]);
+    }
+    console.log(value[1]);
+    for (let key in value[1]) {
+        console.log(value[1][key]);
+    }
+
+});
