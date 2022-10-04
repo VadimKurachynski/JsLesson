@@ -379,13 +379,13 @@
 //     console.log(p[0]);
 // });
 
-
+//-----------------------отправка
 fetch('http://localhost/12.php', {
-  method: 'POST',
-  headers: {
-    'Accept': 'application/json, text/plain, */*',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({a: 7, str: 'Some string: &=&'})
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ a: 7, b: 89, str: 'stroka' })
 }).then(res => res.json())
-  .then(res => console.log(res));
+    .then(res => console.log(res));
