@@ -345,18 +345,18 @@
 //     })
 
 let a = new Promise((resolve, reject) => {
-    fetch("http://node.operate.su/12.php")
+    fetch("http://127.0.0.1/12.php")
         .then(data => {
             resolve(data.text());
         })
 });
 
-let b = new Promise((resolve, reject) => {
-    fetch("http://node.operate.su/12.php")
-        .then(data => {
-            resolve(data.text());
-        })
-});
+// let b = new Promise((resolve, reject) => {
+//     fetch("http://node.operate.su/12.php")
+//         .then(data => {
+//             resolve(data.text());
+//         })
+// });
 
 // a.then(data => {
 //     //console.log(data);
@@ -366,8 +366,16 @@ let b = new Promise((resolve, reject) => {
 //    // console.log(data);
 // })
 
-Promise.all([a, b]).then(value => {
-    console.log(value[0]);
-    console.log(value[1]);
+// Promise.all([a, b]).then(value => {
+//     console.log(value[0]);
+//     console.log(value[1]);
+//     const p = JSON.parse(value[0]);
+//     console.log(p[2],p[1],p[0]);
+// });
 
-});
+// Promise.all([a, b]).then(value => {
+//     console.log(value[0]);
+//     console.log(value[1]);
+//     const p = JSON.parse(value[0]);
+//     console.log(p[2],p[1],p[0]);
+// });
