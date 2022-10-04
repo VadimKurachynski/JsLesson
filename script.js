@@ -344,37 +344,57 @@
 //         console.log(data);
 //     })
 
-let a = new Promise((resolve, reject) => {
-    fetch("http://localhost/12.php")
-        .then(data => {
-            resolve(data.text());
-        })
-});
-
-// let b = new Promise((resolve, reject) => {
-//     fetch("http://node.operate.su/12.php")
+// let a = new Promise((resolve, reject) => {
+//     fetch("http://localhost/12.php")
 //         .then(data => {
 //             resolve(data.text());
 //         })
 // });
 
-// a.then(data => {
-//     //console.log(data);
-// })
+// // let b = new Promise((resolve, reject) => {
+// //     fetch("http://node.operate.su/12.php")
+// //         .then(data => {
+// //             resolve(data.text());
+// //         })
+// // });
 
-// b.then(data => {
-//    // console.log(data);
-// })
+// // a.then(data => {
+// //     //console.log(data);
+// // })
 
-// Promise.all([a, b]).then(value => {
+// // b.then(data => {
+// //    // console.log(data);
+// // })
+
+// // Promise.all([a, b]).then(value => {
+// //     console.log(value[0]);
+// //     console.log(value[1]);
+// //     const p = JSON.parse(value[0]);
+// //     console.log(p[2],p[1],p[0]);
+// // });
+
+// Promise.all([a]).then(value => {
 //     console.log(value[0]);
-//     console.log(value[1]);
 //     const p = JSON.parse(value[0]);
-//     console.log(p[2],p[1],p[0]);
+//     console.log(p[0]);
 // });
 
-Promise.all([a]).then(value => {
-    console.log(value[0]);
-    const p = JSON.parse(value[0]);
-    console.log(p[0]);
-});
+
+const formData = new FormData();
+const photos = document.querySelector('input[type="file"][multiple]');
+
+formData.append('title', 'Мой отпуск в Вегасе');
+for (let i = 0; i < photos.files.length; i++) {
+  formData.append('photos', photos.files[i]);
+}
+
+try {
+  const response = await fetch('https://example.com/posts', {
+    method: 'POST',
+    body: formData
+  });
+  const result = await response.json();
+  console.log('Успех:', JSON.stringify(result));
+} catch (error) {
+  console.error('Ошибка:', error);
+}
