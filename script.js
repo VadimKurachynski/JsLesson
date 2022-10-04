@@ -380,21 +380,19 @@
 // });
 
 
-const formData = new FormData();
-const photos = document.querySelector('input[type="file"][multiple]');
-
-formData.append('title', 'Мой отпуск в Вегасе');
-for (let i = 0; i < photos.files.length; i++) {
-  formData.append('photos', photos.files[i]);
-}
+const url = 'http://localhost/12.php';
+const data = { username: 'example' };
 
 try {
-  const response = await fetch('https://example.com/posts', {
-    method: 'POST',
-    body: formData
+  const response = fetch(url, {
+    method: 'POST', // или 'PUT'
+    body: JSON.stringify(data), // данные могут быть 'строкой' или {объектом}!
+    headers: {
+      'Content-Type': 'application/json'
+    }
   });
-  const result = await response.json();
-  console.log('Успех:', JSON.stringify(result));
+  const json =response.json();
+  console.log('Успех:', JSON.stringify(json));
 } catch (error) {
-  console.error('Ошибка:', error);
+  console.log('Ошибка:', error);
 }
