@@ -380,19 +380,12 @@
 // });
 
 
-const url = 'http://localhost/12.php';
-const data = { username: 'example' };
-
-try {
-  const response = fetch(url, {
-    method: 'POST', // или 'PUT'
-    body: JSON.stringify(data), // данные могут быть 'строкой' или {объектом}!
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-  const json =response.json();
-  console.log('Успех:', JSON.stringify(json));
-} catch (error) {
-  console.log('Ошибка:', error);
-}
+fetch('http://localhost/12.php', {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({a: 7, str: 'Some string: &=&'})
+}).then(res => res.json())
+  .then(res => console.log(res));
