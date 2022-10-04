@@ -379,28 +379,44 @@
 //     console.log(p[0]);
 // });
 
-//-----------------------отправка json на сервер-----------------
+// //-----------------------отправка json на сервер-----------------
+// fetch('http://localhost/12.php', {
+//     method: 'POST',
+//     headers: {
+//         'Accept': 'application/json, text/plain, */*',
+//         'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({ a: 7, b: 89, str: 'stroka' })
+// }).then(res => res.json())
+//     .then(res => console.log(res));
+
+
+// //-----------------------php-----------------
+//     // <?php
+//     // $json = file_get_contents('php://input');
+//     // $obj = json_decode($json,true);
+//     // $a = $obj['a'];
+//     // $b = $obj['b'];
+//     // $str = $obj['str'];
+//     // $arr = array('a' => $a, 'b' => $b, 'c' => $str);
+//     // echo json_encode($arr);
+//     //-----------------------php-----------------
+// //-----------------------отправка json на сервер-----------------
+
 let a = new Promise((resolve, reject) => {
-    fetch('http://localhost/12.php', {
+fetch('http://localhost/12.php', {
     method: 'POST',
     headers: {
         'Accept': 'application/json, text/plain, */*',
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({ a: 7, b: 89, str: 'stroka' })
-}).then(res => res.json())
-    // .then(res => console.log(res))
+}).then(res => resolve(res.json()));
 });
 
 a.then(res => {
-console.log(res);
+    console.log(res);
 })
 
-Promise.all([a]).then(value => {
-    console.log(value[0]);
-    const p = JSON.parse(value[0]);
-    console.log(p[0]);
-});
 
 
-//-----------------------отправка json на сервер-----------------
