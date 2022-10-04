@@ -379,8 +379,9 @@
 //     console.log(p[0]);
 // });
 
-//-----------------------отправка
-fetch('http://localhost/12.php', {
+//-----------------------отправка json на сервер-----------------
+let a = new Promise((resolve, reject) => {
+    fetch('http://localhost/12.php', {
     method: 'POST',
     headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -388,4 +389,18 @@ fetch('http://localhost/12.php', {
     },
     body: JSON.stringify({ a: 7, b: 89, str: 'stroka' })
 }).then(res => res.json())
-    .then(res => console.log(res));
+    // .then(res => console.log(res))
+});
+
+a.then(res => {
+console.log(res);
+})
+
+Promise.all([a]).then(value => {
+    console.log(value[0]);
+    const p = JSON.parse(value[0]);
+    console.log(p[0]);
+});
+
+
+//-----------------------отправка json на сервер-----------------
