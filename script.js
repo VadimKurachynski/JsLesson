@@ -403,6 +403,8 @@
 //     //-----------------------php-----------------
 // //-----------------------отправка json на сервер-----------------
 
+
+//-----------------------ПРОМИСЫ- пример---------------
 let a = new Promise((resolve, reject) => {
     fetch('http://localhost/12.php', {
         method: 'POST',
@@ -434,7 +436,6 @@ b.then(res => {
 })
 
 Promise.all([a, b]).then(value => {
-
     console.log(value[0]);
     for (let key in value[0]) {
         console.log(value[0][key]);
@@ -445,3 +446,4 @@ Promise.all([a, b]).then(value => {
     }
 
 });
+//-----------------------ПРОМИСЫ- пример-конец--------------
