@@ -451,27 +451,37 @@
 
 // --------------UNIT28------------------------------
 
-class Alert{
-    constructor(a,c,d){
-        this.message=a;
-        this.cssClass=c;
-        this.out=d;
+class Alert {
+    constructor(a, c, d) {
+        this.message = a;
+        this.cssClass = c;
+        this.out = d;
     }
-    showAlert(){
-document.querySelector(this.out).innerHTML=`<p class="${this.cssClass}">${this.message}</p>`;
+    showAlert() {
+        document.querySelector(this.out).innerHTML = `<p class="${this.cssClass}">${this.message}</p>`;
     }
 }
 
-class Alert2 extends Alert{
-constructor(a,c,d,icon){
-    super(a,c,d);
-    this.icon=icon;
+class Alert2 extends Alert {
+    constructor(a, c, d, icon) {
+        super(a, c, d);
+        this.icon = icon;
+    }
+    showIconAlert() {
+        document.querySelector(this.out).innerHTML =
+            `<p class="${this.cssClass}">${this.message}</p>
+    <span class="material-symbols-outlined">
+    ${this.icon} </span>`;
+    }
+
 }
-}
 
 
 
-let m=new Alert("My message","orange",".test");
+let m = new Alert("My message", "orange", ".test");
+
 console.log(m);
-
 m.showAlert();
+
+let m2 = new Alert2("My message", "orange", ".test", "home");
+m2.showIconAlert();
