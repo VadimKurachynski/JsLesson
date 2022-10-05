@@ -457,6 +457,12 @@ class Alert{
         this.cssClass=c;
         this.out=d;
     }
+    showAlert(){
+document.querySelector(this.out).innerHTML=`<p class="${this.cssClass}">${this.message}</p>`;
+    }
 }
 
-let m=new Alert();
+let m=new Alert("My message","orange",".test");
+console.log(m);
+
+m.showAlert();
