@@ -462,6 +462,12 @@ document.querySelector(this.out).innerHTML=`<p class="${this.cssClass}">${this.m
     }
 }
 
+class Alert2 extends Alert{
+
+}
+
+
+
 let m=new Alert("My message","orange",".test");
 console.log(m);
 
