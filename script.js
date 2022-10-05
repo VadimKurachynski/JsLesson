@@ -476,8 +476,6 @@ class Alert2 extends Alert {
 
 }
 
-
-
 let m = new Alert("My message", "orange", ".test");
 
 console.log(m);
@@ -485,3 +483,5 @@ m.showAlert();
 
 let m2 = new Alert2("My message", "orange", ".test", "home");
 m2.showIconAlert();
+console.log(m2);
+
