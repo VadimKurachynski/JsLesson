@@ -463,7 +463,10 @@ document.querySelector(this.out).innerHTML=`<p class="${this.cssClass}">${this.m
 }
 
 class Alert2 extends Alert{
-
+constructor(a,c,d,icon){
+    super(a,c,d);
+    this.icon=icon;
+}
 }
 
 
