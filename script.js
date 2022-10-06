@@ -462,6 +462,17 @@ class Alert {
     }
 }
 
+// document.querySelector(".buttonMy").style.backgroundColor="red";
+document.querySelector(".buttonMy").style.width="200px";
+document.querySelector(".buttonMy").style.height="100px";
+
+class MyButton {
+    constructor(a, b, c, d) {
+        this.n = a;
+    }
+    // document.querySelector(this.n).style.backgroundColor="red";
+}
+
 class Alert2 extends Alert {
     constructor(a, c, d, icon) {
         super(a, c, d);
