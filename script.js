@@ -481,11 +481,10 @@ class MyButton {
 }
 
 let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls");
-
 console.log(my);
 my.myBut();
-
-
+let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls");
+my2.myBut();
 
 
 class Alert2 extends Alert {
