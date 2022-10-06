@@ -469,24 +469,28 @@ class Alert {
 
 
 class MyButton {
-    constructor(a, b, c) {
+    constructor(a, b, c,d) {
         this.element = a;
         this.text = b;
         this.cssclas = c;
+        this.textmess=d;
     }
     myBut() {
         document.querySelector(this.element).innerHTML = (this.text);
         document.querySelector(this.element).classList.add(this.cssclas);
+        document.querySelector(this.element).ondblclick = () => {
+              console.log(this.textmess+"двойная");
+             }
         document.querySelector(this.element).onclick = () => {
-            console.log("привет");
+            console.log(this.textmess);
         }
     }
 }
 
-let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls");
+let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls","кнопка№1");
 console.log(my);
 my.myBut();
-let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls");
+let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls","кнопка№2");
 my2.myBut();
 
 
