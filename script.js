@@ -471,16 +471,16 @@ class Alert {
 class MyButton {
     constructor(a, b, c) {
         this.element = a;
-        this.text=b;
-        this.cssclas=c;
+        this.text = b;
+        this.cssclas = c;
     }
-    myBut(){
-     document.querySelector(this.element).innerHTML=(this.text);
-     document.querySelector(this.element).classList.add(this.cssclas);
-     document.querySelector(this.element).onclick = () => {
-          console.log("привет");
-         }
-     }
+    myBut() {
+        document.querySelector(this.element).innerHTML = (this.text);
+        document.querySelector(this.element).classList.add(this.cssclas);
+        document.querySelector(this.element).onclick = () => {
+            console.log("привет");
+        }
+    }
 }
 
 let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls");
