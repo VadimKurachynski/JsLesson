@@ -465,7 +465,7 @@ class Alert {
 // document.querySelector(".buttonMy").style.backgroundColor="red";
 document.querySelector(".buttonMy").style.width="200px";
 document.querySelector(".buttonMy").style.height="100px";
-
+document.querySelector(".buttonMy").classList.add("mycls");
 
 
 class MyButton {
@@ -473,11 +473,10 @@ class MyButton {
         this.element = a;
         this.text=b;
         this.cssclas=c;
-
     }
     myBut(){
      document.querySelector(this.element).innerHTML=`${b}`;
-     document.querySelector(this.element).innerHTML=`${b}`;
+     document.querySelector(this.element).classList.add(`${c}`)
      }
 }
 
