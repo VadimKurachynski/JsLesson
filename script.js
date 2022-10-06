@@ -463,22 +463,28 @@ class Alert {
 }
 
 // document.querySelector(".buttonMy").style.backgroundColor="red";
-document.querySelector(".buttonMy").style.width="200px";
-document.querySelector(".buttonMy").style.height="100px";
-document.querySelector(".buttonMy").classList.add("mycls");
+// document.querySelector(".buttonMy").style.width="200px";
+// document.querySelector(".buttonMy").style.height="100px";
+// document.querySelector(".buttonMy").classList.add("mycls");
 
 
 class MyButton {
-    constructor(a, b, c, d) {
+    constructor(a, b, c) {
         this.element = a;
         this.text=b;
         this.cssclas=c;
     }
     myBut(){
-     document.querySelector(this.element).innerHTML=`${b}`;
-     document.querySelector(this.element).classList.add(`${c}`)
+     document.querySelector(this.element).innerHTML=(this.text);
+     document.querySelector(this.element).classList.add(this.cssclas);
      }
 }
+
+let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls");
+
+console.log(my);
+my.myBut();
+
 
 
 
