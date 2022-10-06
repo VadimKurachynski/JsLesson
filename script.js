@@ -477,6 +477,9 @@ class MyButton {
     myBut(){
      document.querySelector(this.element).innerHTML=(this.text);
      document.querySelector(this.element).classList.add(this.cssclas);
+     document.querySelector(this.element).onclick = () => {
+          console.log("привет");
+         }
      }
 }
 
