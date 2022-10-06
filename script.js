@@ -485,3 +485,6 @@ let m2 = new Alert2("My message", "orange", ".test", "home");
 m2.showIconAlert();
 console.log(m2);
 
+
+
+
