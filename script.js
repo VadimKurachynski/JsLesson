@@ -521,8 +521,9 @@ my2.myBut();
 // --------------UNIT29-----------------------------------
 //Замыкания
 
-let a=9;
+let a=0;
 function one(){
     a=a+1;
     return a;
 }
+console.log(one());
