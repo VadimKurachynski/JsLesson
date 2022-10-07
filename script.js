@@ -532,3 +532,8 @@ let b=t1();
 console.log(b);
 // console.log(one());
 // console.log(one());
+
+document.querySelector(".buttonu29").onclick=()=>{
+  
+    console.log(b());
+}
