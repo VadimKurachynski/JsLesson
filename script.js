@@ -520,10 +520,12 @@ my2.myBut();
 
 // --------------UNIT29-----------------------------------
 //Замыкания
-
+function t1(){
 let a=0;
 function one(){
     a=a+1;
     return a;
 }
+}
+console.log(one());
 console.log(one());
