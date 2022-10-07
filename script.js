@@ -468,53 +468,54 @@ class Alert {
 // document.querySelector(".buttonMy").classList.add("mycls");
 
 
-class MyButton {
-    constructor(a, b, c, d) {
-        this.element = a;
-        this.text = b;
-        this.cssclas = c;
-        this.textmess = d;
-    }
-    myBut() {
-        document.querySelector(this.element).innerHTML = (this.text);
-        document.querySelector(this.element).classList.add(this.cssclas);
-        document.querySelector(this.element).ondblclick = () => {
-            console.log(this.textmess + "двойная");
-        }
-        document.querySelector(this.element).onclick = () => {
-            console.log(this.textmess);
-        }
-    }
-}
+// class MyButton {
+//     constructor(a, b, c, d) {
+//         this.element = a;
+//         this.text = b;
+//         this.cssclas = c;
+//         this.textmess = d;
+//     }
+//     myBut() {
+//         document.querySelector(this.element).innerHTML = (this.text);
+//         document.querySelector(this.element).classList.add(this.cssclas);
+//         document.querySelector(this.element).ondblclick = () => {
+//             console.log(this.textmess + "двойная");
+//         }
+//         document.querySelector(this.element).onclick = () => {
+//             console.log(this.textmess);
+//         }
+//     }
+// }
 
-let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls", "кнопка№1");
-console.log(my);
-my.myBut();
-let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls", "кнопка№2");
-my2.myBut();
-
-
-class Alert2 extends Alert {
-    constructor(a, c, d, icon) {
-        super(a, c, d);
-        this.icon = icon;
-    }
-    showIconAlert() {
-        document.querySelector(this.out).innerHTML =
-            `<p class="${this.cssClass}">${this.message}</p>
-    <span class="material-symbols-outlined">
-    ${this.icon} </span>`;
-    }
-
-}
-let m = new Alert("My message", "orange", ".test");
-console.log(m);
-m.showAlert();
-let m2 = new Alert2("My message", "orange", ".test", "home");
-m2.showIconAlert();
-console.log(m2);
+// let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls", "кнопка№1");
+// console.log(my);
+// my.myBut();
+// let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls", "кнопка№2");
+// my2.myBut();
 
 
+// class Alert2 extends Alert {
+//     constructor(a, c, d, icon) {
+//         super(a, c, d);
+//         this.icon = icon;
+//     }
+//     showIconAlert() {
+//         document.querySelector(this.out).innerHTML =
+//             `<p class="${this.cssClass}">${this.message}</p>
+//     <span class="material-symbols-outlined">
+//     ${this.icon} </span>`;
+//     }
+
+// }
+// let m = new Alert("My message", "orange", ".test");
+// console.log(m);
+// m.showAlert();
+// let m2 = new Alert2("My message", "orange", ".test", "home");
+// m2.showIconAlert();
+// console.log(m2);
 
 
+// --------------UNIT28------конец------------------------
 
+
+// --------------UNIT28------конец------------------------
