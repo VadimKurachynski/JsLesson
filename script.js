@@ -469,28 +469,28 @@ class Alert {
 
 
 class MyButton {
-    constructor(a, b, c,d) {
+    constructor(a, b, c, d) {
         this.element = a;
         this.text = b;
         this.cssclas = c;
-        this.textmess=d;
+        this.textmess = d;
     }
     myBut() {
         document.querySelector(this.element).innerHTML = (this.text);
         document.querySelector(this.element).classList.add(this.cssclas);
         document.querySelector(this.element).ondblclick = () => {
-              console.log(this.textmess+"двойная");
-             }
+            console.log(this.textmess + "двойная");
+        }
         document.querySelector(this.element).onclick = () => {
             console.log(this.textmess);
         }
     }
 }
 
-let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls","кнопка№1");
+let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls", "кнопка№1");
 console.log(my);
 my.myBut();
-let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls","кнопка№2");
+let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls", "кнопка№2");
 my2.myBut();
 
 
@@ -516,6 +516,7 @@ m.showAlert();
 let m2 = new Alert2("My message", "orange", ".test", "home");
 m2.showIconAlert();
 console.log(m2);
+
 
 
 
