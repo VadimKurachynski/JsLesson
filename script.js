@@ -522,10 +522,13 @@ my2.myBut();
 //Замыкания
 function t1(){
 let a=0;
-function one(){
+return function(){
     a=a+1;
     return a;
 }
 }
-console.log(one());
-console.log(one());
+
+let b=t1();
+console.log(b);
+// console.log(one());
+// console.log(one());
