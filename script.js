@@ -468,30 +468,30 @@ class Alert {
 // document.querySelector(".buttonMy").classList.add("mycls");
 
 
-// class MyButton {
-//     constructor(a, b, c, d) {
-//         this.element = a;
-//         this.text = b;
-//         this.cssclas = c;
-//         this.textmess = d;
-//     }
-//     myBut() {
-//         document.querySelector(this.element).innerHTML = (this.text);
-//         document.querySelector(this.element).classList.add(this.cssclas);
-//         document.querySelector(this.element).ondblclick = () => {
-//             console.log(this.textmess + "двойная");
-//         }
-//         document.querySelector(this.element).onclick = () => {
-//             console.log(this.textmess);
-//         }
-//     }
-// }
+class MyButton {
+    constructor(a, b, c, d) {
+        this.element = a;
+        this.text = b;
+        this.cssclas = c;
+        this.textmess = d;
+    }
+    myBut() {
+        document.querySelector(this.element).innerHTML = (this.text);
+        document.querySelector(this.element).classList.add(this.cssclas);
+        document.querySelector(this.element).ondblclick = () => {
+            console.log(this.textmess + "двойная");
+        }
+        document.querySelector(this.element).onclick = () => {
+            console.log(this.textmess);
+        }
+    }
+}
 
-// let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls", "кнопка№1");
-// console.log(my);
-// my.myBut();
-// let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls", "кнопка№2");
-// my2.myBut();
+let my = new MyButton(`.buttonMy`, "ПРИВЕТ", "mycls", "кнопка№1");
+console.log(my);
+my.myBut();
+let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls", "кнопка№2");
+my2.myBut();
 
 
 // class Alert2 extends Alert {
@@ -519,4 +519,10 @@ class Alert {
 
 
 // --------------UNIT29-----------------------------------
+//Замыкания
 
+let a=9;
+function one(){
+    a=a+1;
+    return a;
+}
