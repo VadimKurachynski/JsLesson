@@ -527,8 +527,21 @@ function t1() {
         return a;
     }
 }
-
 let b = t1();
 document.querySelector(".buttonu29").onclick = () => {
     console.log(b());
 }
+
+// --------------UNIT30-----------------------------------
+
+let a = 0;
+function rec() {
+    a++;
+    console.log(a);
+    if (a > 100) {
+        return a;
+    }
+    rec();
+};
+rec();
+
