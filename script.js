@@ -493,7 +493,6 @@
 // let my2 = new MyButton(`.buttonMy1`, "НЕТ", "mycls", "кнопка№2");
 // my2.myBut();
 
-
 // class Alert2 extends Alert {
 //     constructor(a, c, d, icon) {
 //         super(a, c, d);
