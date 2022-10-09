@@ -33,34 +33,36 @@ h2 {
     background-color: aqua;
     border: 2px black solid;
     font-size: 20px;
+}
 
-}
-.u19box{
+.u19box {
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
-.u19{
+
+.u19 {
     margin: 20px;
     width: 200px;
     height: 200px;
     border: 2px solid red;
 }
 
-.progress{
+.progress {
 
     display: flex;
-   flex-direction: column;
-   align-items: center;
-  
+    flex-direction: column;
+    align-items: center;
+
 }
-.u19bt{
+
+.u19bt {
     margin: 20px;
     width: 200px;
     height: 50px;
     border: 2px solid red;
 }
 
-.mycls{
+.mycls {
     width: 200px;
     height: 50px;
     border: 2px solid rgb(26, 11, 11);
