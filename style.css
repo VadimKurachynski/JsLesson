@@ -48,11 +48,9 @@ h2 {
 }
 
 .progress {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .u19bt {
