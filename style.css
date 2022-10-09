@@ -22,14 +22,12 @@ h2 {
 
 .graf {
     /* display: flex; */
-   
     flex-direction: row;
     flex-wrap: wrap;
     height: 100%;
 }
 
 .col1 {
-  
     margin: 20px;
     width: 200px;
     height: 200px;
