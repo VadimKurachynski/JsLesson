@@ -509,9 +509,7 @@
 // let m2 = new Alert2("My message", "orange", ".test", "home");
 // m2.showIconAlert();
 // console.log(m2);
-
 // --------------UNIT28------конец------------------------
-
 // --------------UNIT29-----------------------------------
 //Замыкания
 function t1() {
@@ -525,7 +523,6 @@ let b = t1();
 document.querySelector(".buttonu29").onclick = () => {
     console.log(b());
 }
-
 // --------------UNIT30-----------------------------------
 let a = 0;
 function rec() {
@@ -537,7 +534,3 @@ function rec() {
     rec();
 };
 rec();
-
-
-
-
