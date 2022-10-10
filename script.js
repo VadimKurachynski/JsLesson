@@ -130,7 +130,6 @@
 // }
 // document.querySelector(".push3").onclick = () =>{
 //      k= +document.querySelector(".in12").value;
-
 //     }
 // k=8;
 
