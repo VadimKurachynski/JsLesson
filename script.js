@@ -241,7 +241,6 @@
 // document.querySelector(".u19-3").addEventListener("touchend",mytouch2);
 // document.querySelector(".u19-3").addEventListener("touchmove",mytouch3);
 
-
 // function mytouch1(){
 //   console.log("toch1");
 // }
