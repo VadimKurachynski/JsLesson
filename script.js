@@ -84,7 +84,6 @@
 // tt.style.background="red";
 // tt.style.color="blue";
 // console.log(tt.style);
-
 // document.querySelectorAll(".btU9").onclick=function(){
 //    this.classList.toggle("one");
 // }
