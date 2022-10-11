@@ -228,7 +228,6 @@
 // document.querySelector(".inputU20").onkeypress= function(even){
 //   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
 // }
-
 // document.querySelector(".inputU20").onkeydown= function(even){
 //   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
 // }
