@@ -230,10 +230,10 @@
 // document.querySelector(".inputU20").onkeydown= function(even){
 //   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
 // }
-
 // document.querySelector(".inputU20").onkeyup= function(even){
 //   console.log(`${even.charCode}           ${even.code}  ${even.key}`);
 // }
+
 
 // --------------UNIT21------------------------------
 // document.querySelector(".u19-3").addEventListener("touchstart",mytouch1);
