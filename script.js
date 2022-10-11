@@ -505,25 +505,37 @@
 // --------------UNIT28------конец------------------------
 // --------------UNIT29-----------------------------------
 //Замыкания
-function t1() {
-    let a = 5;
-    return function () {
-        a = a + 1;
-        return a;
-    }
-}
-let b = t1();
-document.querySelector(".buttonu29").onclick = () => {
-    console.log(b());
-}
-// --------------UNIT30-----------------------------------
-let a = 0;
-function rec() {
-    a++;
-    console.log(a);
-    if (a > 100) {
-        return a;
-    }
-    rec();
-};
-rec();
+// function t1() {
+//     let a = 5;
+//     return function () {
+//         a = a + 1;
+//         return a;
+//     }
+// }
+// let b = t1();
+// document.querySelector(".buttonu29").onclick = () => {
+//     console.log(b());
+// }
+// // --------------UNIT30-----------------------------------
+// let a = 0;
+// function rec() {
+//     a++;
+//     console.log(a);
+//     if (a > 100) {
+//         return a;
+//     }
+//     rec();
+// };
+// rec();
+
+
+//-----------------------отправка json на сервер-----------------
+fetch('http://localhost/ctrl.php', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ a: 7, b: 89, str: 'stroka' })
+}).then(res => res.json())
+    .then(res => console.log(res));
